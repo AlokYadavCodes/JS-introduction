@@ -1,4 +1,5 @@
 let userName="Ramesh Yadav"
+// let userName="Mukesh"   Re-declaration is not allowed
 console.log(userName)
 const userId=121 //change not allowed
 let userStatus="Approved";
