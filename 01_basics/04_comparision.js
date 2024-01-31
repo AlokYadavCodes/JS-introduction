@@ -14,8 +14,8 @@ console.log("35"==35)  //true
 console.log("35"===35)  //false
 
 
-== checks the values
-=== checks the values and their data types also
+// == checks the values
+// === checks the values and their data types also
 
 
 console.log("alok"=="hitesh") //false
