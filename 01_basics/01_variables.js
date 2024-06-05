@@ -21,7 +21,7 @@ var bye="Bye";
 //i.e. the interpreter move the declaration to the top of their SCOPE, prior to execution of the code.
 
 
-//--------------------------------------------------------------------------
+//--------------------------------- SCOPE-----------------------------------------
 //Let's have a look at different types of scope:
 //Javascript variables have 3 types of scope:
 //1. Block Scope  (accessible inside a block i.e. {})
@@ -53,7 +53,7 @@ myFunction();  //function calling
 
 // let:
 // -> has all the three scopes.
-//-> can't be re-declared in the same scope.
+// -> can't be re-declared in the same scope.
 let name="Amit";
 // let name="Aman";  //Syntax error
 console.log(name);  //Amit
