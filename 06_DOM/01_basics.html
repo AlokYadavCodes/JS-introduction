@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+<span id="span1">this is a span</span>
+<span id="hi" title="hello"> HELLO</span>
+
+
+<script>
+    const body=document.body    // selecting parent element
+    body.append("world!", " bye world")   // we can append string and nodes using append method
+    // body.appendChild("javascript")   // error (append child requires a node as a argument ex: p,div,etc)
+
+    const div=document.createElement('div')  // created a div element
+    div.innerText="div text"
+    body.append(div)
+
+    // removing an existing element
+    const span1=document.querySelector('#span1')
+    span1.remove()
+    // adding it again
+    body.append(span1)
+
+    // another way to remove an element (using parent):
+    body.removeChild(span1)
+
+    //manipulating attributes of an element:
+    //getting attributes:
+    const hi=document.querySelector('#hi')
+    console.log(hi.getAttribute('title'))
+    console.log(hi.title)
+    // both works same
+
+    //setting attributes:
+    hi.setAttribute('id',"myNewID")
+    hi.id="newID"
+    // both works same
+
+    //removing attributes;
+    hi.removeAttribute('title')
+
+    // adding class:
+    hi.classList.add('newClass')
+
+    // removing class:
+    hi.classList.remove('newClass')
+
+    // toggle class: adds class if it does not exist and removes it if already exist
+    hi.classList.toggle('newClass')
+
+    // manipulating styles:
+    hi.style.color='red'
+    hi.style.backgroundColor='yellow'
+    // the kebab case in CSS is converted to camel case in JavaScript.
+    // ex: background-color in CSS = backgroundColor in JS
+
+</script>
+</body>
+</html>
